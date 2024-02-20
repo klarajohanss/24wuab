@@ -16,7 +16,7 @@ body {
     'ft'
     ;
     grid-template-columns: 100%;
-    grid-template-rows: 8vh 50vh 35vh 60vh 40vh 30vh;
+    grid-template-rows: 8vh 50vh 35vh 80vh 50vh 30vh;
     gap: 0;
 }
 
@@ -29,10 +29,13 @@ nav {
     border-color: #f4b43a;
     display: flex;
     align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 5;
 }
 
 .rasasayang-logo-small {
-    font-family: "Patua One", serif;
     font-family: "Patua One", serif;
     font-weight: 400;
     font-size: 1.25em;
@@ -55,6 +58,15 @@ header {
     opacity: 0.8;
 }
 
+.header-text {
+    font-family: "Patua One", serif;
+    position: absolute;
+    top: 17%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.15em;
+}
+
 #om-oss {
     grid-area: s1;
     background-color: whitesmoke;
@@ -73,15 +85,61 @@ header {
 
 #easy-access-links {
     grid-area: s2;
-    background-color: rgb(37, 63, 37);
+    background-color: #d73842;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    justify-content: space-between;
+    position: relative;
+}
+
+.img-ea-link {
+    width: 98%;
+    height: 48%;
+    border-style: solid;
+    border-color: #f4b43a;
+    object-fit: cover;
+    opacity: 0.75;
+}
+
+.text-to-meny {
+    position: absolute;
+    top: 15%;
+    left: 43%;
+    text-align: center;
+    font-size: 1.75em;
+    font-family: "Patua One", serif;
+}
+
+.text-to-takeaway {
+    position: absolute;
+    top: 60%;
+    left: 38%;
+    text-align: center;
+    font-size: 1.75em;
+    font-family: "Patua One", serif;
 }
 
 #quick-info {
     grid-area: s3;
-    background-color: rgb(4, 56, 4);
+    background-color: whitesmoke;
 }
+
+
+.quick-info-text{
+    margin: 2em;
+}
+
 
 footer {
     grid-area: ft;
-    background-color: rgb(103, 255, 103);
+    background-color: #d73842;
+    color: #f4b43a;
+    align-self: flex-end;
+    text-align: center;
+    font-size: 15px;
+}
+
+#footer-text {
+    text-decoration: underline;
 }
