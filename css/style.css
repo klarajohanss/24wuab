@@ -4,6 +4,10 @@ body {
     font-family: "Signika", sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 
 #index-main-wrapper {
     display: grid;
@@ -16,7 +20,7 @@ body {
     'ft'
     ;
     grid-template-columns: 100%;
-    grid-template-rows: 8vh 50vh 35vh 80vh 50vh 30vh;
+    grid-template-rows: 8vh 50vh 35vh 55vh 50vh 30vh;
     gap: 0;
 }
 
@@ -32,7 +36,8 @@ nav {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    z-index: 5;
+    z-index: 10;
+    justify-content: space-between;
 }
 
 .rasasayang-logo-small {
@@ -43,8 +48,56 @@ nav {
     color: #f4b43a
 }
 
+.material-symbols-outlined {
+    margin-right: 0.5em;
+    color: #f4b43a;
+    border-radius: 8%;
+}
+
+.material-symbols-outlined:hover {
+    background-color: rgb(161, 47, 54);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 .nav-mobile {
-    display: none;
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    transition: right 0.3s;
+    z-index: 5;
+    padding-top: 12vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.show {
+    right: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    padding-left: 8vw;
+    margin: 0.3em;
+    font-family: "Patua One", serif;
+}
+
+.nav-link:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    color: #d73842;
+}
+
+#red-bottom {
+    background-color: #d73842;
+    height: 25vh;
+    width: 100vw;
+    margin-top: 50vh;
 }
 
 header {
@@ -55,11 +108,12 @@ header {
 .header-image {
     height: 100%;
     width: 100%;
-    opacity: 0.8;
+    opacity: 1;
+    object-fit: cover;
 }
 
 .header-text {
-    font-family: "Patua One", serif;
+    font-style: italic;
     position: absolute;
     top: 17%;
     width: 100%;
@@ -81,6 +135,21 @@ header {
 
 #to-kontakt {
     align-self: center;
+    text-align: center;
+    color: whitesmoke;
+    background-color: black;
+    height: 1.8em;
+    width: 6em;
+    padding-top: 0.4em;
+    margin-top: 3vh;
+    font-weight: 200;
+}
+
+#to-kontakt:hover {
+    color: black;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-width: thin;
 }
 
 #easy-access-links {
@@ -88,18 +157,15 @@ header {
     background-color: #d73842;
     display: flex;
     flex-direction: column;
-    padding: 1em;
-    justify-content: space-between;
+    justify-content: space-evenly;
     position: relative;
+    align-items: center;
 }
 
 .img-ea-link {
-    width: 98%;
-    height: 48%;
-    border-style: solid;
-    border-color: #f4b43a;
+    width: 95%;
+    height: 45%;
     object-fit: cover;
-    opacity: 0.75;
 }
 
 .text-to-meny {
@@ -107,8 +173,14 @@ header {
     top: 15%;
     left: 43%;
     text-align: center;
-    font-size: 1.75em;
-    font-family: "Patua One", serif;
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.text-to-meny:hover {
+    color: #d73842;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .text-to-takeaway {
@@ -117,7 +189,13 @@ header {
     left: 38%;
     text-align: center;
     font-size: 1.75em;
-    font-family: "Patua One", serif;
+    font-weight: bold;
+}
+
+.text-to-takeaway:hover {
+    color: #d73842;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 #quick-info {
