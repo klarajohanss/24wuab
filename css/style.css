@@ -221,3 +221,109 @@ footer {
 #footer-text {
     text-decoration: underline;
 }
+
+
+
+
+#kontakt-main-wrapper {
+    display: grid;
+    grid-template-areas: 
+    'nv'
+    'hd-k'
+    's1-k'
+    'rd'
+    's2-k'
+    's3-k'
+    'ft'
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 8vh 30vh 45vh 15vh 40vh 60vh 30vh;
+    gap: 0;
+}
+
+#header-kontakt {
+    grid-area: hd-k;
+    display: flex;
+    
+}
+
+#kontakt-header-img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    object-position: 100% 20%;
+}
+
+#kontakt-header-text {
+    position: absolute;
+    top: 14%;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8em;
+    font-style: italic;
+}
+
+
+#main-section-kontakt {
+    grid-area: s1-k;
+    background-color: whitesmoke;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#kontakta-oss-text {
+    font-weight: 600;
+    margin-top: 2em;
+}
+
+#kontaktuppgift-parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20vh;
+}
+
+.kontaktuppgift {
+    align-self: center;
+    text-align: center;
+    color: black;
+    background-color: whitesmoke;
+    border-style: solid;
+    border-width: thin;
+    height: 1.8em;
+    width: 20em;
+    padding-top: 0.4em;
+    font-weight: 200;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+#red-block {
+    grid-area: rd;
+    background-color: #d73842;
+}
+
+#more-info-kontakt {
+    grid-area: s2-k;
+    background-color: whitesmoke;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.h3-kontakt {
+    font-weight: 800;
+    font-size: 1.2em;
+    margin-top: 2em;
+}
+
+
+#map {
+    grid-area: s3-k;
+    background-color: whitesmoke;
+    padding-bottom: 2em;
+}
+
+#map-container {
+    height: fit-content;
+    width: fit-content;
+}
