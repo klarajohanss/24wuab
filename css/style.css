@@ -287,7 +287,7 @@ footer {
     margin-top: 2em;
 }
 
-#kontaktuppgift-parent {
+.kontaktuppgift-parent {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -479,3 +479,55 @@ footer {
 }
 
 
+
+
+#takeaway-main-wrapper {
+    display: grid;
+    grid-template-areas: 
+    'nv'
+    'hd-t'
+    's1-t'
+    's2-t'
+    'ft'
+    ;
+    grid-template-columns: 100%;
+    grid-template-rows: 8vh 30vh 50vh 200vh 30vh;
+    gap: 0;
+}
+
+#header-takeaway {
+    grid-area: hd-t;
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#takeaway-img-hd {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#takeaway-info {
+    grid-area: s1-t;
+    background-color: whitesmoke;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#takeaway-info-hd {
+    font-weight: 600;
+    margin-top: 2em;
+}
+
+
+#takeaway-meny {
+    grid-area: s2-t;
+    background-color: whitesmoke;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#meny-takeaway-hd {
+    text-align: center;
+}
