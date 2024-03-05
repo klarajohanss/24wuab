@@ -292,7 +292,7 @@ footer {
     flex-direction: column;
     justify-content: space-evenly;
     height: 20vh;
-    margin-top: 10vh;
+    margin-top: 5vh;
 }
 
 .kontaktuppgift {
@@ -517,7 +517,7 @@ footer {
 
 #takeaway-info-hd {
     font-weight: 600;
-    margin-top: 2em;
+    margin-top: 3em;
 }
 
 
