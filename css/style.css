@@ -60,6 +60,10 @@ nav {
     cursor: pointer;
 }
 
+.nav-desktop {
+    display: none;
+}
+
 .nav-mobile {
     height: 100vh;
     width: 100vw;
@@ -353,7 +357,7 @@ footer {
     'ft'
     ;
     grid-template-columns: 100%;
-    grid-template-rows: 8vh 30vh 180vh 200vh 30vh;
+    grid-template-rows: 8vh 38vh 180vh 200vh 30vh;
     gap: 0;
 }
 
@@ -530,4 +534,25 @@ footer {
 
 #meny-takeaway-hd {
     text-align: center;
+}
+
+@media only screen and (min-width: 700px) {
+    .nav-mobile {
+        display: none;
+    }
+    
+    .nav-desktop {
+        display: inline;
+        color:#f4b43a;
+    }
+
+    .material-symbols-outlined {
+        display: none;
+    }
+
+    
+}
+
+@media only screen and (max-width: 700px) {
+    
 }
