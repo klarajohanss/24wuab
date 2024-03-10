@@ -542,12 +542,33 @@ footer {
     }
     
     .nav-desktop {
-        display: inline;
+        display: block;
         color:#f4b43a;
+        padding-right: 2vw;
     }
 
-    .material-symbols-outlined {
+    .nav-link{
+        color: #f4b43a;
+        font-size: 1.15em;
+        padding: 1.2vw;
+    }
+
+    .nav-link:hover{
+        color:#bb7111;
+        transition: 0.3s;
+    }
+
+    #material-icon {
         display: none;
+    }
+
+    #om-oss-text {
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    h2 {
+        text-align: center;
     }
 
     
