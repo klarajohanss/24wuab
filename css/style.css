@@ -381,7 +381,6 @@ footer {
     grid-area: s1-m;
     background-color: whitesmoke;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
 }
 
@@ -550,7 +549,15 @@ footer {
     display: none;
 }
 
+.quick-info-content{
+    margin-top: 3.5em;
+}
+
 @media only screen and (min-width: 700px) {
+    p{
+        font-size: large;
+    }
+
     .nav-mobile {
         display: none;
     }
@@ -577,8 +584,8 @@ footer {
     }
 
     #om-oss-text {
-        margin-left: 20vw;
-        margin-right: 20vw;
+        margin-left: 25vw;
+        margin-right: 25vw;
     }
 
     h2 {
@@ -655,7 +662,6 @@ footer {
         width: 6em;
         text-align: center;
         padding-top: 0.5em;
-
     }
 
     #button-to-meny:hover{
@@ -677,7 +683,6 @@ footer {
         width: 6em;
         text-align: center;
         padding-top: 0.5em;
-
     }
 
     #button-to-takeaway:hover{
@@ -686,13 +691,53 @@ footer {
         transition: 0.1s;
     }
 
-    .quick-info-content{
+    .quick-info-text{
+        display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+
+    }
+
+    .quick-info-content{
+        margin-top: 2em;
+        padding-right: 4em;
+        width: 25%;
+        height: 100%;
+    }
+
+    #vertical-line{
+        margin-top: 3.5em;
+        width: 1px;
+        height: 35vh;
+        background-color:black;
+    }
+
+    #align-center{
+        text-align: center;
+    }
+
+    #meny-header-p{
+        margin-left: 25vw;
+        margin-right: 25vw;
+        
+    }
+
+    #to-sub-menus{
+        display: flex;
+        align-content: space-evenly;
     }
     
+    .sub-menu-img {
+        height: 45%;
+        width: 45%;
+        object-fit: cover;
+        border-radius: 0.3em;
+    }
 }
 
 @media only screen and (max-width: 700px) {
+    #to-sub-menus{
+        flex-direction: column;
+    }
     
 }
