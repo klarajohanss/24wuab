@@ -20,7 +20,7 @@ a {
     'ft'
     ;
     grid-template-columns: 100%;
-    grid-template-rows: 8vh 50vh 45vh 55vh 60vh 30vh;
+    grid-template-rows: 8vh 50vh 50vh 55vh 65vh 30vh;
     gap: 0;
 }
 
@@ -249,7 +249,7 @@ footer {
     'ft'
     ;
     grid-template-columns: 100%;
-    grid-template-rows: 8vh 30vh 55vh 8vh 40vh 60vh 30vh;
+    grid-template-rows: 8vh 30vh 55vh 8vh 45vh 60vh 30vh;
     gap: 0;
 }
 
@@ -355,7 +355,7 @@ footer {
     'ft'
     ;
     grid-template-columns: 100%;
-    grid-template-rows: 8vh 38vh 180vh 200vh 30vh;
+    grid-template-rows: 8vh 45vh 180vh 200vh 30vh;
     gap: 0;
 }
 
@@ -380,15 +380,13 @@ footer {
 #to-sub-menus {
     grid-area: s1-m;
     background-color: whitesmoke;
-    display: flex;
-    justify-content: space-evenly;
+    text-align: center;
 }
 
 .sub-menu-img {
     height: 23%;
     width: 95%;
     object-fit: cover;
-    align-self: center;
     border-radius: 0.3em;
 }
 
@@ -518,7 +516,7 @@ footer {
 
 #takeaway-info-hd {
     font-weight: 600;
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
 
@@ -551,6 +549,14 @@ footer {
 
 .quick-info-content{
     margin-top: 3.5em;
+}
+
+.sub-menu{
+    padding-top: 6vh;
+}
+
+#map-desktop{
+    display: none;
 }
 
 @media only screen and (min-width: 700px) {
@@ -586,6 +592,7 @@ footer {
     #om-oss-text {
         margin-left: 25vw;
         margin-right: 25vw;
+        margin-top: 5vh;
     }
 
     h2 {
@@ -594,6 +601,9 @@ footer {
 
     #to-kontakt {
         font-size: large;
+        height: 4vh;
+        width: 15%;
+        margin-top: 10vh;
     }
 
     .header-text {
@@ -637,16 +647,16 @@ footer {
         display: inline;
         position: absolute;
         top: 20vh;
-        left: 13vw;
-        font-size: 1.4em;
+        left: 12%;
+        font-size: 1.3em;
     }
 
     .text-to-takeaway2{
         display: inline;
         position: absolute;
         top: 20vh;
-        left: 64vw;
-        font-size: 1.4em;
+        left: 64%;
+        font-size: 1.3em;
     }
 
     #button-to-meny {
@@ -716,28 +726,125 @@ footer {
         text-align: center;
     }
 
+    #meny-main-wrapper {
+        display: grid;
+        grid-template-areas: 
+        'nv'
+        'hd-m'
+        's1-m'
+        's2-m'
+        'ft'
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 8vh 40vh 80vh 200vh 30vh;
+        gap: 0;
+    }
+
     #meny-header-p{
         margin-left: 25vw;
         margin-right: 25vw;
         
     }
 
-    #to-sub-menus{
-        display: flex;
-        align-content: space-evenly;
-    }
-    
     .sub-menu-img {
-        height: 45%;
-        width: 45%;
+        height: 48%;
+        width: 48%;
         object-fit: cover;
         border-radius: 0.3em;
+        margin: 0.2em;
     }
+
+    #to-alacarte{
+        top: 77vh;
+        left: 6%;
+    }
+
+    #to-lunch{
+        top: 116vh;
+        left: 6%;
+    }
+
+    #to-drycker{
+        top: 77vh;
+        left: 55%;
+    }
+
+    #to-erbjudanden{
+        top: 116vh;
+        left: 55%;
+    }
+
+    .sub-menu{
+        padding-top: 7vh;
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+
+    #takeaway-info{
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+
+    #takeaway-info-hd{
+        font-size: x-large;
+        text-align: center;
+    }
+
+    #kontakta-oss-text{
+        font-size: x-large;
+    }
+
+    #main-section-kontakt{
+        padding-left: 20vw;
+        padding-right: 20vw;
+    }
+
+    .kontaktuppgift-parent{
+        margin-top: 8vh;
+    }
+
+    #map{
+        display: none;
+    }
+
+    #kontakt-main-wrapper {
+        display: grid;
+        grid-template-areas: 
+        'nv'
+        'hd-k'
+        's1-k'
+        'rd'
+        's2-k'
+        'ft'
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: 8vh 30vh 55vh 8vh 65vh 30vh;
+        gap: 0;
+    }
+
+    #more-info-kontakt{
+        display: flex;
+        justify-content: space-around;
+        padding-left: 10vw;
+    }
+
+    #map-desktop{
+        display: block;
+        width: 60%;
+        height: 85%;
+        margin-top: 2em;
+    }
+
+    #more-info-content{
+        width: 30%;
+        height: 100%;
+        margin-top: 3em;
+    }
+
+
 }
 
 @media only screen and (max-width: 700px) {
-    #to-sub-menus{
-        flex-direction: column;
-    }
+    
     
 }
