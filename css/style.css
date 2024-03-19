@@ -565,6 +565,14 @@ footer {
     display: none;
 }
 
+.menu-parent{
+    display: none;
+}
+
+h3{
+    font-size: 1.4em;
+}
+
 @media only screen and (min-width: 700px) {
     p{
         font-size: large;
