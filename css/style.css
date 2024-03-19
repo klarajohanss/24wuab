@@ -361,7 +361,7 @@ footer {
     'ft'
     ;
     grid-template-columns: 100%;
-    grid-template-rows: 8vh 45vh 180vh 200vh 55vh;
+    grid-template-rows: 8vh 45vh 180vh 2800vh 55vh;
     gap: 0;
 }
 
@@ -569,8 +569,18 @@ footer {
     display: none;
 }
 
-h3{
+.h3-sub{
     font-size: 1.4em;
+    margin: 7vh;
+    text-align: center;
+}
+
+.sub-sub-menu{
+    text-align: center;
+}
+
+.bold{
+    font-weight: bold;
 }
 
 @media only screen and (min-width: 700px) {
