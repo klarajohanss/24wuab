@@ -583,8 +583,15 @@ footer {
     font-weight: bold;
 }
 
-#sm-list{
-    
+#sm-list-parent{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sm-list{
+    width: 30%;
 }
 
 @media only screen and (min-width: 700px) {
