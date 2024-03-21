@@ -116,6 +116,10 @@ header {
     object-fit: cover;
 }
 
+.header-image-desktop{
+    display: none;
+}
+
 .header-text {
     font-style: italic;
     position: absolute;
@@ -123,6 +127,7 @@ header {
     width: 100%;
     text-align: center;
     font-size: large;
+    color: black;
 }
 
 #om-oss {
@@ -588,11 +593,13 @@ footer {
     height: 30vh;
     display: flex;
     justify-content: space-around;
+    margin-bottom: 15vh;
 }
 
 .sm-list{
     width: 30%;
 }
+
 
 @media only screen and (min-width: 700px) {
     p{
@@ -641,9 +648,10 @@ footer {
     }
 
     .header-text {
-        width: 21vw;
-        top: 50vh;
-        left: 77vw;
+        width: 24vw;
+        top: 45vh;
+        left: 74vw;
+        color: black;
     }
 
     #easy-access-links {
@@ -656,6 +664,7 @@ footer {
     .ea-link{
         height: 98%;
         width: 48%;
+        filter: blur(0.1em);
     }
 
     .img-ea-link{
@@ -757,7 +766,7 @@ footer {
         background-color:black;
     }
 
-    #align-center{
+    .align-center{
         text-align: center;
     }
 
@@ -771,7 +780,7 @@ footer {
         'ft'
         ;
         grid-template-columns: 100%;
-        grid-template-rows: 8vh 40vh 100vh 200vh 55vh;
+        grid-template-rows: 8vh 40vh 100vh 1500vh 55vh;
         gap: 0;
     }
 
@@ -795,13 +804,13 @@ footer {
     }
 
     #to-lunch{
-        top: 131vh;
-        left: 6%;
+        top: 82vh;
+        left: 55%;
     }
 
     #to-drycker{
-        top: 82vh;
-        left: 55%;
+        top: 131vh;
+        left: 6%;
     }
 
     #to-erbjudanden{
@@ -811,8 +820,8 @@ footer {
 
     .sub-menu{
         padding-top: 7vh;
-        margin-left: 20vw;
-        margin-right: 20vw;
+        margin-left: 18vw;
+        margin-right: 18vw;
     }
 
     #takeaway-info{
@@ -880,6 +889,36 @@ footer {
         height: 100%;
         margin-top: 3em;
     }
+
+    .header-image{
+        display: none;
+    }
+
+    .header-image-desktop{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .sub-sub-menu{
+        display: flex;
+        justify-content: space-around;
+        text-align: start;
+    }
+
+    .sm-column{
+        width: 40%;
+        height: 100%;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+        .sm-column-thai{
+            width: 30%;
+            height: 100%;
+            margin-left: 3vw;
+            margin-right: 3vw;
+        }
 
 
 }
