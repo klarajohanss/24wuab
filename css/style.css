@@ -939,6 +939,26 @@ footer {
         gap: 0;
     }
 
+    .dryck-meny{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .dryck-name{
+        width: 25%;
+    }
+
+    .dryck-liten{
+        width: 10%;
+    }
+
+    .dryck-stor{
+        width: 10%;
+    }
+    
+
 }
 
 @media only screen and (max-width: 700px) {}
