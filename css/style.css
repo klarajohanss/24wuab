@@ -366,7 +366,7 @@ footer {
         'ft'
     ;
     grid-template-columns: 100%;
-    grid-template-rows: 8vh 45vh 180vh 2800vh 55vh;
+    grid-template-rows: 8vh 45vh 180vh 2775vh 55vh;
     gap: 0;
 }
 
@@ -600,8 +600,47 @@ footer {
     width: 30%;
 }
 
+#ingar-glass{
+    text-align: center;
+}
+
+.dryck-meny{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dryck-name{
+    width: 50%;
+}
+
+.dryck-liten{
+    width: 15%;
+}
+
+.dryck-stor{
+    width: 15%;
+}
+
+#arrow-up-parent{
+    position: -webkit-sticky;
+    position: sticky; 
+    z-index: 10;
+    bottom: 3vh;
+    left: 94vw;
+}
+
+#arrow-up{
+    height: 1.5em;
+    width: 1.5em;
+}
+
+
 
 @media only screen and (min-width: 700px) {
+    .display-none{
+        display: none;
+    }
+
     p {
         font-size: large;
     }
@@ -780,7 +819,7 @@ footer {
             'ft'
         ;
         grid-template-columns: 100%;
-        grid-template-rows: 8vh 40vh 100vh 1800vh 55vh;
+        grid-template-rows: 8vh 40vh 100vh 1930vh 55vh;
         gap: 0;
     }
 
@@ -939,21 +978,14 @@ footer {
         gap: 0;
     }
 
-    .dryck-meny{
-        height: 100%;
-        width: 100%;
-        display: flex;
-        justify-content: space-evenly;
-    }
-
     .dryck-name{
         width: 25%;
     }
-
+    
     .dryck-liten{
         width: 10%;
     }
-
+    
     .dryck-stor{
         width: 10%;
     }
