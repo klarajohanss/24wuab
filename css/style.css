@@ -348,12 +348,10 @@ footer {
     padding-bottom: 2em;
 }
 
-#google-map {
+.google-map {
     height: 100%;
     width: 100%;
 }
-
-
 
 
 #meny-main-wrapper {
@@ -486,6 +484,7 @@ footer {
     background-color: whitesmoke;
     padding-left: 1.5em;
     padding-right: 1.5em;
+    overflow: scroll;
 }
 
 
@@ -536,6 +535,7 @@ footer {
     background-color: whitesmoke;
     padding-left: 10vw;
     padding-right: 10vw;
+    overflow: scroll;
 }
 
 #meny-takeaway-hd {
@@ -600,44 +600,45 @@ footer {
     width: 30%;
 }
 
-#ingar-glass{
+#ingar-glass {
     text-align: center;
 }
 
-.dryck-meny{
+.dryck-meny {
     display: flex;
     justify-content: space-evenly;
 }
 
-.dryck-name{
+.dryck-name {
     width: 50%;
 }
 
-.dryck-liten{
+.dryck-liten {
     width: 15%;
 }
 
-.dryck-stor{
+.dryck-stor {
     width: 15%;
 }
 
-#arrow-up-parent{
+#arrow-up-parent {
     position: -webkit-sticky;
-    position: sticky; 
+    position: sticky;
     z-index: 10;
     bottom: 3vh;
-    left: 94vw;
+    left: 88%;
+    height: 1.5em;
+    width: 1.5em;
 }
 
-#arrow-up{
+#arrow-up {
     height: 1.5em;
     width: 1.5em;
 }
 
 
-
 @media only screen and (min-width: 700px) {
-    .display-none{
+    .display-none {
         display: none;
     }
 
@@ -819,7 +820,7 @@ footer {
             'ft'
         ;
         grid-template-columns: 100%;
-        grid-template-rows: 8vh 40vh 100vh 1930vh 55vh;
+        grid-template-rows: 8vh 40vh 100vh 1940vh 55vh;
         gap: 0;
     }
 
@@ -974,23 +975,25 @@ footer {
             'ft'
         ;
         grid-template-columns: 100%;
-        grid-template-rows: 8vh 30vh 50vh 1155vh 55vh;
+        grid-template-rows: 8vh 30vh 50vh 1165vh 55vh;
         gap: 0;
     }
 
-    .dryck-name{
+    .dryck-name {
         width: 25%;
     }
-    
-    .dryck-liten{
+
+    .dryck-liten {
         width: 10%;
     }
-    
-    .dryck-stor{
+
+    .dryck-stor {
         width: 10%;
     }
-    
+
+    #arrow-up-parent {
+        left: 96%;
+        bottom: 5vh;
+    }
 
 }
-
-@media only screen and (max-width: 700px) {}
