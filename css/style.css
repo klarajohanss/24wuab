@@ -9,6 +9,10 @@ a {
     color: black;
 }
 
+img{
+    filter: sepia(0.3);
+}
+
 #index-main-wrapper {
     display: grid;
     grid-template-areas:
@@ -114,10 +118,12 @@ header {
     width: 100%;
     opacity: 1;
     object-fit: cover;
+    filter: none;
 }
 
 .header-image-desktop {
     display: none;
+    filter: none;
 }
 
 .header-text {
@@ -634,6 +640,10 @@ footer {
 #arrow-up {
     height: 1.5em;
     width: 1.5em;
+}
+
+.grey-background{
+    background-color: rgba(183, 181, 181, 0.459);
 }
 
 
